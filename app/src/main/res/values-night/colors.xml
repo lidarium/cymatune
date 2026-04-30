@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material3 Tonal Palette -->
+    <color name="primary_500">#3498db</color>
+    <color name="primary_200">#B8E7FF</color>
+    <color name="secondary_500">#4F6269</color>
+    <color name="secondary_200">#D1E6F0</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Material3 Attribute Aliases -->
+    <color name="colorPrimary">@color/primary_500</color>
+    <color name="colorPrimaryContainer">@color/cardBackgroundLight</color>  <!-- Use dark surface instead of pale blue -->
+    <color name="colorSecondary">@color/secondary_500</color>
+    <color name="colorOnSecondary">@color/white</color>
+    <color name="colorSecondaryContainer">@color/cardBackgroundLight</color>  <!-- Use dark surface for secondary container too -->
+    
+    <!-- Existing semantic colors -->
+    <color name="green">#4CAF50</color>
+    <color name="red">#F44336</color>
+    
+    <!-- Material 3 tonal palettes -->
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnPrimaryContainer">#001E2F</color>
+    <color name="colorOnSecondaryContainer">#0A1E26</color>
+
+    <!-- Material Design 3 Dark Theme Colors -->
+    <!-- Surface colors -->
+    <color name="android_colorBackground">#121212</color>
+    <color name="android_colorSurface">#121212</color>
+    <color name="android_colorSurfaceVariant">#1E1E1E</color>
+    <color name="android_colorOnSurface">#FFFFFF</color>
+    <color name="android_colorOnSurfaceVariant">#C4C7C5</color>
+    
+    <!-- Text colors for dark theme (WCAG AA compliant) -->
+    <color name="textColorPrimary">@android:color/white</color>  <!-- 15.8:1 contrast on #121212 -->
+    <color name="textColorSecondary">#E0E0E0</color>  <!-- 11.9:1 contrast on #121212 -->
+    <color name="colorPrimaryDark">#1a6a8f</color>  <!-- Same primary dark -->
+    
+    <!-- Accent color -->
+    <color name="colorAccent">@color/primary_500</color>
+    
+    <!-- Card background colors for dark theme -->
+    <color name="cardBackgroundLight">#1E1E1E</color>  <!-- Surface variant -->
+    
+    <!-- Standard Android dark theme colors -->
+    <color name="android_darker_gray">#757575</color>  <!-- 4.6:1 contrast on #121212 -->
+</resources>

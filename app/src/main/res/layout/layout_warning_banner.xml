@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card_glass"
+    android:padding="12dp">
+
+    <!-- Top Row: Icon, Message, Chevron -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bannerHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bannerIcon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/circle_badge"
+            app:tint="@color/warning_yellow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bannerMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/BodyText"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bannerChevron"
+            app:layout_constraintStart_toEndOf="@+id/bannerIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Geographic Anomaly: Connected tower reported at conflicting coordinates." />
+
+        <ImageView
+            android:id="@+id/bannerChevron"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_expand_more"
+            android:rotation="0"
+            app:tint="@color/text_tertiary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Expandable Detail Section -->
+    <LinearLayout
+        android:id="@+id/detailContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background_dark" />
+
+        <!-- One-sentence explanation -->
+        <TextView
+            android:id="@+id/detailExplanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textAppearance="@style/BodyText"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:lineSpacingMultiplier="1.2"
+            tools:text="This tower is broadcasting at an unusual location compared to its registered coordinates, which may indicate a spoofed or relocated base station." />
+
+    </LinearLayout>
+
+</LinearLayout>

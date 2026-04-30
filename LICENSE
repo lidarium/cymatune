@@ -1,0 +1,37 @@
+Cymatune Source-Available License
+Copyright (c) 2025 Cymatune
+
+GRANT OF RIGHTS:
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files, to use, copy, modify,
+distribute, and distribute modified versions of this software, subject to
+the following conditions:
+
+PERMITTED USE:
+- Personal use and self-hosting: PERMITTED
+- Educational purposes: PERMITTED
+- Security research and testing: PERMITTED
+- Non-commercial modifications: PERMITTED
+
+PROHIBITED:
+- Commercial use without a separate commercial license
+- Internal business use in organizations without license
+- Creating competing products or derivatives for commercial purposes
+- Redistribution as a commercial SaaS or managed service
+
+COMMERCIAL LICENSING:
+For commercial use, licensing, or enterprise deployment, contact:
+licensing@cymatune.ai
+
+THIS SOFTWARE IS PROVIDED "AS-IS" WITHOUT WARRANTY OF ANY KIND.
+THE AUTHORS AND COPYRIGHT HOLDERS DISCLAIM ALL WARRANTIES,
+EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+DISCLOSURE:
+This version of Cymatune transmits and stores data WITHOUT ENCRYPTION.
+All security analysis and detection are performed locally on the device.

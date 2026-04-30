@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/card_background"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- SIM Icon -->
+        <ImageView
+            android:id="@+id/simIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_sim_card"
+            android:contentDescription="SIM Card"
+            app:tint="@color/primary_neon" />
+
+        <!-- SIM Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <!-- SIM Name -->
+            <TextView
+                android:id="@+id/simName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIM 1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+
+            <!-- Phone Number -->
+            <TextView
+                android:id="@+id/simNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91 12345 67890"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="2dp" />
+
+            <!-- Carrier Name -->
+            <TextView
+                android:id="@+id/simCarrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jio"
+                android:textSize="12sp"
+                android:textColor="@color/primary_neon"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <!-- Selection Indicator -->
+        <ImageView
+            android:id="@+id/selectionIndicator"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_forward"
+            android:contentDescription="Select"
+            app:tint="@color/text_tertiary" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

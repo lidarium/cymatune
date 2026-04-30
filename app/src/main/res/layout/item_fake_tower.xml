@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f8f8f8"
+    android:layout_margin="4dp">
+
+    <TextView
+        android:id="@+id/tower_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CID: 12345 | LAC: 67890"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#212121" />
+
+    <TextView
+        android:id="@+id/location_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location: 40.7128°N, 74.0060°W"
+        android:textSize="14sp"
+        android:textColor="#424242"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/detection_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detected: 2023-11-13 01:30 | Accuracy: 85%"
+        android:textSize="12sp"
+        android:textColor="#616161"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/reason_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reason: Signal anomaly detected"
+        android:textSize="12sp"
+        android:textColor="#616161"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>

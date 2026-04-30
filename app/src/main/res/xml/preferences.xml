@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="distance_units"
+        android:title="Distance Units"
+        android:summary="Select units for distance measurements"
+        android:entries="@array/distance_units_options"
+        android:entryValues="@array/distance_units_values"
+        android:defaultValue="km" />
+    
+    <SwitchPreference
+        android:key="tower_drawer_enabled"
+        android:title="Real-time Tower Details"
+        android:summary="Show real-time tower details in bottom drawer"
+        android:defaultValue="false" />
+</PreferenceScreen>

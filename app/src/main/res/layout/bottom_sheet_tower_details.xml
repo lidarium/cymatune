@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card_glass"
+    android:padding="24dp">
+
+    <!-- Header Section -->
+    <TextView
+        android:id="@+id/tvTowerTitle"
+        style="@style/HeaderMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tower Details"
+        android:textColor="@color/primary_neon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Tower Information Section -->
+    <TextView
+        android:id="@+id/tvTowerIdLabel"
+        style="@style/LabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOWER ID"
+        android:textColor="@color/accent_blue"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTowerTitle" />
+
+    <TextView
+        android:id="@+id/tvTowerIdValue"
+        style="@style/MetricValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTowerIdLabel" />
+
+    <!-- Network Information -->
+    <TextView
+        android:id="@+id/tvNetworkTypeLabel"
+        style="@style/LabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NETWORK TYPE"
+        android:textColor="@color/accent_blue"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTowerIdValue" />
+
+    <TextView
+        android:id="@+id/tvNetworkTypeValue"
+        style="@style/MetricValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNetworkTypeLabel" />
+
+    <!-- PCI Section -->
+    <TextView
+        android:id="@+id/tvPciLabel"
+        style="@style/LabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PCI"
+        android:textColor="@color/accent_blue"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNetworkTypeValue" />
+
+    <TextView
+        android:id="@+id/tvPciValue"
+        style="@style/MetricValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPciLabel" />
+
+    <!-- ARFCN Section -->
+    <TextView
+        android:id="@+id/tvArfcnLabel"
+        style="@style/LabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ARFCN"
+        android:textColor="@color/accent_blue"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPciValue" />
+
+    <TextView
+        android:id="@+id/tvArfcnValue"
+        style="@style/MetricValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvArfcnLabel" />
+
+    <!-- Timing Advance Section -->
+    <TextView
+        android:id="@+id/tvTaLabel"
+        style="@style/LabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIMING ADVANCE"
+        android:textColor="@color/accent_blue"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvArfcnValue" />
+
+    <TextView
+        android:id="@+id/tvTaValue"
+        style="@style/MetricValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTaLabel" />
+
+    <!-- Signal Strength Section -->
+    <TextView
+        android:id="@+id/tvSignalLabel"
+        style="@style/LabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGNAL STRENGTH"
+        android:textColor="@color/accent_blue"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTaValue" />
+
+    <TextView
+        android:id="@+id/tvSignalValue"
+        style="@style/MetricValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSignalLabel" />
+
+    <!-- RSRP Section -->
+    <TextView
+        android:id="@+id/tvRsrpLabel"
+        style="@style/LabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RSRP"
+        android:textColor="@color/accent_blue"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSignalValue" />
+
+    <TextView
+        android:id="@+id/tvRsrpValue"
+        style="@style/MetricValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRsrpLabel" />
+
+    <!-- RSRQ Section -->
+    <TextView
+        android:id="@+id/tvRsrqLabel"
+        style="@style/LabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RSRQ"
+        android:textColor="@color/accent_blue"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRsrpValue" />
+
+    <TextView
+        android:id="@+id/tvRsrqValue"
+        style="@style/MetricValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRsrqLabel" />
+
+    <!-- SINR Section -->
+    <TextView
+        android:id="@+id/tvSinrLabel"
+        style="@style/LabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SINR"
+        android:textColor="@color/accent_blue"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRsrqValue" />
+
+    <TextView
+        android:id="@+id/tvSinrValue"
+        style="@style/MetricValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSinrLabel" />
+
+    <!-- Trust Score Section -->
+    <TextView
+        android:id="@+id/tvTrustScoreLabel"
+        style="@style/LabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRUST SCORE"
+        android:textColor="@color/accent_blue"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSinrValue" />
+
+    <TextView
+        android:id="@+id/tvTrustScoreValue"
+        style="@style/MetricValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTrustScoreLabel" />
+
+    <!-- Accuracy Section -->
+    <TextView
+        android:id="@+id/tvAccuracyLabel"
+        style="@style/LabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACCURACY"
+        android:textColor="@color/accent_blue"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTrustScoreValue" />
+
+    <TextView
+        android:id="@+id/tvAccuracyValue"
+        style="@style/MetricValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAccuracyLabel" />
+
+    <!-- Location Information -->
+    <TextView
+        android:id="@+id/tvLocationLabel"
+        style="@style/LabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOCATION"
+        android:textColor="@color/accent_blue"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAccuracyValue" />
+
+    <TextView
+        android:id="@+id/tvLocationValue"
+        style="@style/MetricValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLocationLabel" />
+
+    <!-- Timestamp -->
+    <TextView
+        android:id="@+id/tvTimestampLabel"
+        style="@style/LabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LAST UPDATED"
+        android:textColor="@color/accent_blue"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLocationValue" />
+
+    <TextView
+        android:id="@+id/tvTimestampValue"
+        style="@style/MetricValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTimestampLabel" />
+
+    <!-- Warning History -->
+    <TextView
+        android:id="@+id/tvWarningsLabel"
+        style="@style/LabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WARNING HISTORY"
+        android:textColor="@color/warning_red"
+        android:layout_marginTop="24dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTimestampValue" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWarnings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWarningsLabel" />
+        
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLocateOnMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Locate on Map"
+        android:backgroundTint="@color/accent_blue"
+        app:layout_constraintTop_toBottomOf="@id/rvWarnings"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

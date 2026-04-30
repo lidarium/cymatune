@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Theme for Cyberpunk/Tech App - API 27+ -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_neon</item>
+        <item name="colorPrimaryDark">@color/background_dark</item>
+        <item name="colorAccent">@color/secondary_neon</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorSecondary">@color/secondary_neon</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        
+        <!-- Transparent System Bars for Immersive Look -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        
+        <!-- Default Background -->
+        <item name="android:windowBackground">@drawable/bg_gradient_main</item>
+    </style>
+</resources>
