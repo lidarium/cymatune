@@ -200,8 +200,8 @@ Cymatune is a **detection tool** for research and personal security.
 
 ## 📞 Support
 
-- **Issues:** [GitHub Issues](https://github.com/sandtuskers/Cymatune/issues)
-- **Repository:** https://github.com/sandtuskers/Cymatune
+- **Issues:** [GitHub Issues](https://github.com/lidarium/Cymatune/issues)
+- **Repository:** https://github.com/lidarium/Cymatune
 
 ---
 
