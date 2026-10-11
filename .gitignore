@@ -1,0 +1,57 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+/.vscode/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Google Services
+google-services.json
+
+# Keystore
+*.jks
+*.keystore
+keystore.properties
+
+# Mobile Tools for Android (Lite)
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/codeStyles/
+.idea/gradle.xml
+.idea/misc.xml
+.idea/runConfigurations.xml
+.idea/vcs.xml
+
+# Gradle
+.gradle/
+build/
+
+# Build Artifacts
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+
+# Play Store Assets
+play_store_icon_512.png
+feature_graphic.png
+PLAY_STORE_CHECKLIST.md
+
+# Build Environment
+.gradle_home/
+keys/
+.kotlin/

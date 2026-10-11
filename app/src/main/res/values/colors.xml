@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Cymatune Modern Theme -->
+    <color name="background_dark">#050B14</color>
+    <color name="background_gradient_start">#050B14</color>
+    <color name="background_gradient_end">#0F1724</color>
+    
+    <color name="surface_dark">#161B26</color>
+    <color name="surface_glass">#CC161B26</color>
+    
+    <color name="primary_neon">#00F0FF</color>
+    <color name="primary_neon_dim">#00B8CC</color>
+    
+    <color name="secondary_neon">#BC13FE</color>
+    
+    <color name="accent_blue">#2D6BFF</color>
+    <color name="warning_red">#FF2A6D</color>
+    <color name="warning_yellow">#FFB800</color>
+    <color name="alert_orange">#FF6D00</color>
+    <color name="alert_lime">#CDDC39</color>
+    
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#E0E0E0</color>
+    <color name="text_tertiary">#8A93A6</color>
+    
+    <!-- Aliased colors for layout compatibility -->
+    <color name="textPrimary">@color/text_primary</color>
+    <color name="textSecondary">@color/text_secondary</color>
+    <color name="textTertiary">@color/text_tertiary</color>
+    
+    <!-- Card colors -->
+    <color name="cardBackground">@color/surface_dark</color>
+    <color name="card_background">@color/surface_dark</color>
+    <color name="cardBackgroundDark">#0F1420</color>
+    <color name="cardStroke">@color/border_glass</color>
+    
+    <color name="divider">#2A303C</color>
+    <color name="border_glass">#33FFFFFF</color>
+    
+    <!-- Material3 Tonal Palette (Light Theme Defaults) -->
+    <color name="primary_500">#2196F3</color>
+    <color name="primary_200">#90CAF9</color>
+    <color name="secondary_500">#607D8B</color>
+    <color name="secondary_200">#B0BEC5</color>
+    
+    <!-- Semantic colors -->
+    <color name="green">#4CAF50</color>
+    <color name="red">#F44336</color>
+    
+    <!-- Material 3 tonal palettes -->
+    <color name="colorPrimary">@color/primary_500</color>
+    <color name="colorPrimaryContainer">#E3F2FD</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnPrimaryContainer">#001E2F</color>
+    
+    <color name="colorSecondary">@color/secondary_500</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorSecondaryContainer">#CFE8F3</color>
+    <color name="colorOnSecondaryContainer">#0A1E26</color>
+    
+    <!-- Surface colors (Light Theme) -->
+    <color name="android_colorBackground">#FFFFFF</color>
+    <color name="android_colorSurface">#FFFFFF</color>
+    <color name="android_colorSurfaceVariant">#F5F5F5</color>
+    <color name="android_colorOnSurface">#000000</color>
+    <color name="android_colorOnSurfaceVariant">#424242</color>
+    
+    <!-- Text colors (Light Theme) -->
+    <color name="textColorPrimary">@android:color/black</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    
+    <!-- Accent color -->
+    <color name="colorAccent">@color/primary_500</color>
+    
+    <!-- Card background colors (Light Theme) -->
+    <color name="cardBackgroundLight">#FFFFFF</color>
+    
+    <!-- Standard Android colors -->
+    <color name="android_darker_gray">#424242</color>
+</resources>

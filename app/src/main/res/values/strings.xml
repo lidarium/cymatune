@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cymatune</string>
+    <string name="triangulate">Start Triangulation</string>
+    <string name="status">Status</string>
+
+    <!-- Distance units options for preferences -->
+    <string-array name="distance_units_options">
+        <item>Kilometers (km)</item>
+        <item>Miles (mi)</item>
+    </string-array>
+
+    <string-array name="distance_units_values">
+        <item>km</item>
+        <item>mi</item>
+    </string-array>
+    <string name="select_units">Select distance units</string>
+
+    <!-- Permissions -->
+    <string name="permission_location">Location Permission</string>
+    <string name="permission_phone_state">Phone State Permission</string>
+    <string name="permission_storage">Storage Permission</string>
+    <string name="permission_camera">Camera Permission</string>
+    <string name="permission_background_location">Background Location Permission</string>
+    <string name="permission_notifications">Notifications Permission</string>
+    <string name="permission_read_logs_status">Logcat Permission Status</string>
+    
+    <!-- SMS Permission Dialog -->
+    <string name="sms_permission_title">Enhanced Signal Analysis</string>
+    <string name="sms_permission_message">Cymatune can detect silent SMS events used by some towers.\n\nThis requires SMS permissions to:\n• Detect silent SMS (Class 0 messages)\n• Correlate SMS with network paging patterns\n• Identify unusual signal events\n\nYour messages are NEVER read or stored. Only metadata is analyzed for signal anomalies.\n\nThis feature is optional but recommended for comprehensive analysis.</string>
+    <string name="sms_permission_enable">Enable Analysis</string>
+    <string name="sms_permission_skip">Skip</string>
+    <string name="sms_permission_required_title">Permissions Required</string>
+    <string name="sms_permission_required_message">Cymatune needs Location and Phone State permissions to detect fake cell towers. Without these, the app cannot function.</string>
+    <string name="sms_permission_denied_title">Permissions Denied</string>
+    <string name="sms_permission_denied_message">You have permanently denied the required permissions. Please enable them in Settings to use Cymatune.</string>
+
+    <!-- UI Elements -->
+    <string name="button_view_log">View Log</string>
+    <string name="switch_auto_triangulate">Auto Triangulate</string>
+    <string name="text_current_location">Current Location</string>
+    <string name="text_connected_towers">Connected Towers</string>
+    <string name="button_save_results">Save Results</string>
+    <string name="button_export_data">Export Data</string>
+    <string name="switch_debug_mode">Debug Mode</string>
+    <string name="switch_background_scanning">Background Scanning</string>
+    <string name="background_scanning_warning">Warning: Background scanning consumes battery</string>
+    <string name="theme_radio_group">Theme</string>
+    <string name="button_clear_data">Clear Data</string>
+    <string name="radio_light">Light</string>
+    <string name="radio_dark">Dark</string>
+    <string name="radio_system">System Default</string>
+    <string name="radio_light_mode">Light Mode</string>
+    <string name="radio_dark_mode">Dark Mode</string>
+    <string name="radio_system_mode">System Default</string>
+
+    <!-- Main Activity Strings -->
+    <string name="app_name_cymature">Cymatune</string>
+    <string name="app_name_lt"></string>
+    <string name="signal_strength_default">- dBm</string>
+    <string name="backspace">Backspace</string>
+    <string name="status_checking_towers">Checking for fake towers.</string>
+    <string name="map_attribution">© OpenStreetMap contributors</string>
+    <string name="tower_details_title">Tower Details</string>
+    <string name="connected_tower_label">Connected Tower</string>
+    <string name="tower_details_placeholder">Tower details will appear here.</string>
+    <string name="lock_tower_checkbox">Lock on to Tower</string>
+    <string name="no_suspicious_tower_detected">No suspicious tower detected.</string>
+    <string name="manual_triangulation_button">MANUAL TRIANGULATION</string>
+    <string name="locate_fake_tower_button">LOCATE FAKE TOWER</string>
+    <string name="scan_radius_label">Scan Radius</string>
+    <string name="scan_radius_default">Current Scan Radius: 0 km (Max: 0 km)</string>
+
+    <!-- Tower Info Activity Strings -->
+    <string name="connected_towers">Connected Towers</string>
+    <string name="connected_towers_title">Connected Towers</string>
+    <string name="no_tower_connection">No tower connection</string>
+    <string name="loading_tower_info">Loading tower information...</string>
+
+    <!-- Test Activity Strings -->
+    <string name="starting_fake_detection">Starting fake detection...</string>
+    <string name="loading_text">Loading...</string>
+    <string name="signal_strength_label">Signal Strength:</string>
+    <string name="lock_current_cell">Lock on to current serving cell</string>
+    <string name="no_suspicious_towers">No suspicious towers.</string>
+    <string name="current_scan_radius">Current Scan Radius: 5 km</string>
+
+    <!-- Settings Activity Strings -->
+    <string name="permissions_title">Permissions</string>
+    <string name="features_title">Features</string>
+    <string name="appearance_title">Appearance</string>
+    <string name="distance_units_title">Distance Units</string>
+
+    <!-- Dialog Strings -->
+    <string name="logcat_permission_message">This app can detect more suspicious activity if you grant it log access. Due to Android security, you must grant this permission via a computer using ADB:\n\nadb shell pm grant com.cymatune android.permission.READ_LOGS</string>
+    <string name="dont_show_again">Don\'t show this again</string>
+
+    <!-- Tower Entry Strings -->
+    <string name="tower_entry_default">CID: 12345, LAC: 67890, MCC: 310, MNC: 410</string>
+    <string name="tower_location_default">📍 Lat: 37.7749, Lon: -122.4194</string>
+    <string name="tower_signal_default">Signal: -85 dBm, TA: 5</string>
+    <string name="tower_suspicious_default">⚠️ Suspicious Behavior (85%)</string>
+    <!-- Detection Pattern Explanations -->
+    <string name="explanation_stationary_user_moving_tower">This tower appears to be moving while you are stationary (%1$s). Real cell towers are fixed installations and should not move. This could indicate a mobile fake tower (IMSI catcher) that\'s following you or being transported nearby.</string>
+    <string name="explanation_user_moving_tower_following">The tower appears to be moving with you as you travel (%1$s). While some tower handoffs are normal during travel, consistent movement matching your speed and direction could indicate a mobile surveillance device.</string>
+    <string name="explanation_stationary_user_intermittent_tower">This tower keeps appearing and disappearing while you\'re stationary (%1$s). Real towers maintain consistent coverage. Intermittent connections suggest a portable device that\'s being turned on/off or moved in/out of range.</string>
+    <string name="explanation_timing_advance_anomaly">Timing Advance values show unusual fluctuations while you\'re stationary (%1$s). TA should remain relatively constant when not moving. Significant changes could indicate signal manipulation or a fake tower adjusting its timing.</string>
+    <string name="explanation_network_performance_anomaly">Network performance doesn\'t match signal strength (%1$s). Strong signals with poor performance could indicate a man-in-the-middle attack where the fake tower intercepts but doesn\'t properly relay your communications.</string>
+    <string name="explanation_new_unknown_tower">This is a newly observed tower with limited historical data (%1$s). While new towers are deployed regularly, combined with other suspicious patterns, this could indicate a recently activated surveillance device.</string>
+    <string name="explanation_unusual_signal_pattern">Signal strength shows abnormal fluctuations (%1$s). Real towers typically maintain more consistent signal levels. Erratic patterns could indicate equipment issues or intentional signal manipulation.</string>
+    <string name="explanation_network_anomalies">General network irregularities detected (%1$s). This could include authentication failures, registration issues, or other network-layer anomalies that sometimes accompany fake tower operations.</string>
+    <string name="explanation_registration_issues">Registration and authentication problems detected (%1$s). Fake towers may struggle to properly handle network registration procedures, leading to repeated connection attempts or authentication failures.</string>
+    <string name="explanation_general_suspicion">Suspicious activity detected: %1$s (%2$s). This could indicate potential surveillance or network manipulation.</string>
+    
+    <!-- Severity and Confidence Levels -->
+    <string name="multiple_detection_patterns">Multiple suspicious patterns detected:</string>
+    
+    <!-- Recommended Actions -->
+    <string name="actions_high_accuracy">⚠️ HIGH RISK: Consider avoiding sensitive communications. Move to a different location. Monitor for additional suspicious activity.</string>
+    <string name="actions_medium_accuracy">⚠️ MEDIUM RISK: Be cautious with sensitive communications. This could be a fake tower or network issue. Monitor the situation.</string>
+    <string name="actions_low_accuracy">ℹ️ LOW RISK: This might be a network anomaly or new tower. Continue monitoring but no immediate action needed.</string>
+    <string name="actions_very_low_accuracy">ℹ️ VERY LOW RISK: Minor anomaly detected. Likely normal network behavior but worth noting for future reference.</string>
+    
+    <!-- Educational Content -->
+    <string name="educational_content_general">Fake towers (IMSI catchers) are surveillance devices that mimic real cell towers to intercept mobile communications. They can:\n\n• Track your location\n• Intercept calls and messages\n• Perform man-in-the-middle attacks\n• Collect subscriber identity information\n\nLegitimate reasons for detection patterns include:\n• New tower deployments\n• Network maintenance\n• Temporary coverage issues\n• Equipment malfunctions\n\nAlways consider context before taking action.</string>
+    
+    <!-- Gradual Suspicion Levels -->
+    <string name="suspicion_level_none">No suspicious activity detected</string>
+    <string name="suspicion_level_low">Low suspicion - monitoring recommended</string>
+    <string name="suspicion_level_medium">Medium suspicion - exercise caution</string>
+    <string name="suspicion_level_high">High suspicion - potential threat detected</string>
+    <string name="suspiction_level_severe">SEVERE - multiple strong indicators detected</string>
+    
+    <!-- Accuracy Display -->
+    <string name="accuracy_display_format">%1$s%% accuracy (%2$s)</string>
+
+    <!-- Permission Onboarding Strings -->
+    <string name="continue_text">Continue</string>
+    <string name="background_location_permission_title">Background Location Access</string>
+    <string name="background_location_permission_description">Cymatune needs continuous location access to monitor cellular tower signals even when the app is not in use. This helps detect fake towers that may appear and disappear rapidly.</string>
+    
+    <string name="precise_location_permission_title">Precise Location Access</string>
+    <string name="precise_location_permission_description">Exact GPS coordinates are essential to pinpoint the precise location and identity of nearby towers. This enables accurate triangulation and detection of suspicious tower activity.</string>
+    
+    <string name="notification_permission_title">Notification Permission</string>
+    <string name="notification_permission_description">Receive immediate alerts about important events like potential fake tower detection or significant changes in network connectivity. Notifications help keep you informed about security threats.</string>
+    
+    <string name="phone_permission_title">Phone State Access</string>
+    <string name="phone_permission_description">Access to phone state information is essential for reading network operator details, signal strength, and other critical telephony data needed for comprehensive tower analysis and fake tower detection.</string>
+    
+    <string name="permission_denied">Permission Denied</string>
+    <string name="permission_denied_message">Some features may be limited without this permission. You can grant it later in app settings.</string>
+    
+    <string name="permission_granted">Permission Granted</string>
+    <string name="all_permissions_granted">All permissions granted! Starting fake tower detection...</string>
+    
+    <string name="open_settings">Open Settings</string>
+    <string name="background_location_granted">Background location access granted</string>
+    <string name="background_location_denied">Background location access denied. Some features may be limited.</string>
+    
+    <string name="permission_onboarding_complete">Setup Complete</string>
+    <string name="permission_onboarding_complete_message">All necessary permissions have been configured. The app is now ready to monitor local cell towers.</string>
+    
+    <!-- Signal Status Dashboard Strings -->
+    <string name="signal_status_dashboard_title">Signal Status Dashboard</string>
+    <string name="lte_metrics_title">LTE Metrics</string>
+    <string name="nr_5g_metrics_title">5G NR Metrics</string>
+    <string name="network_performance_title">Network Performance</string>
+    <string name="advanced_info_title">Advanced Information</string>
+    <string name="rsrp_label">RSRP</string>
+    <string name="rsrq_label">RSRQ</string>
+    <string name="sinr_label">SINR</string>
+    <string name="rssi_label">RSSI</string>
+    <string name="ss_rsrp_label">SS-RSRP</string>
+    <string name="ss_rsrq_label">SS-RSRQ</string>
+    <string name="ss_sinr_label">SS-SINR</string>
+    <string name="cqi_label">CQI</string>
+    <string name="throughput_label">Throughput</string>
+    <string name="latency_label">Latency</string>
+    <string name="packet_loss_label">Packet Loss</string>
+    <string name="band_label">Band</string>
+    <string name="bandwidth_label">Bandwidth</string>
+    <string name="carrier_aggregation_label">Carrier Aggregation</string>
+    <string name="mmwave_detected_label">mmWave Detected</string>
+    <string name="dual_connectivity_label">Dual Connectivity</string>
+    <string name="refresh_data">Refresh Data</string>
+    <string name="no_signal_data">No signal data available</string>
+    <string name="signal_quality_excellent">Excellent</string>
+    <string name="signal_quality_good">Good</string>
+    <string name="signal_quality_fair">Fair</string>
+    <string name="signal_quality_poor">Poor</string>
+    <string name="signal_quality_none">No Signal</string>
+    <string name="dbm_unit">dBm</string>
+    <string name="db_unit">dB</string>
+    <string name="ms_unit">ms</string>
+    <string name="mbps_unit">Mbps</string>
+    <string name="percent_unit">%</string>
+    <string name="mhz_unit">MHz</string>
+    <string name="permission_required">Permission required</string>
+    <string name="no_signal">No signal</string>
+    
+    <!-- Tower Type Selection -->
+    <string name="tower_type_prompt">Select tower type</string>
+    <string-array name="tower_types">
+        <item>Auto-Detect</item>
+        <item>LTE (4G)</item>
+        <item>5G NR (Sub-6 GHz)</item>
+        <item>5G NR mmWave</item>
+        <item>GSM (2G)</item>
+        <item>UMTS (3G)</item>
+        <item>CDMA</item>
+        <item>Unknown/Other</item>
+    </string-array>
+    <!-- HUD-specific strings -->
+    <string name="tower_type">Tower Type:</string>
+    <string name="select_tower_type">Select tower type</string>
+    <string name="network_operator">Network:</string>
+    <string name="signal_strength">Signal:</string>
+    <string name="network_type">Network Type:</string>
+    <string name="lte_parameters">LTE Parameters</string>
+    <string name="nr_parameters">5G NR Parameters</string>
+    <string name="rsrp">RSRP:</string>
+    <string name="rsrq">RSRQ:</string>
+    <string name="sinr">SINR:</string>
+    <string name="pci">PCI:</string>
+    <string name="earfcn">EARFCN:</string>
+    <string name="band">Band:</string>
+    <string name="ss_rsrp">SS-RSRP:</string>
+    <string name="ss_rsrq">SS-RSRQ:</string>
+    <string name="ss_sinr">SS-SINR:</string>
+    <string name="nr_arfcn">NR-ARFCN:</string>
+    <string name="nr_band">NR Band:</string>
+    <!-- Tower Detail Drawer Strings -->
+    <string name="close_drawer">Close drawer</string>
+    <string name="tower_id_label">Tower ID:</string>
+    <string name="location_label">Location:</string>
+    <string name="last_seen_label">Last Seen:</string>
+    <string name="network_type_label">Network:</string>
+    <string name="accuracy_label">Accuracy:</string>
+    
+    <!-- Format strings for tower details -->
+    <string name="tower_id_format" formatted="false">CID: %d, LAC: %d, MCC: %d, MNC: %d</string>
+    <string name="location_format" formatted="false">%.6f, %.6f</string>
+    <string name="signal_strength_format" formatted="false">%d dBm</string>
+    <string name="last_seen_format" formatted="false">%s</string>
+    <string name="network_type_format" formatted="false">%s</string>
+    <string name="accuracy_format" formatted="false">%d%%</string>
+    
+</resources>

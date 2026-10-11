@@ -1,0 +1,92 @@
+<resources>
+    <!-- Base Theme for Cyberpunk/Tech App -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_neon</item>
+        <item name="colorPrimaryDark">@color/background_dark</item>
+        <item name="colorAccent">@color/secondary_neon</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorSecondary">@color/secondary_neon</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        
+        <!-- Transparent System Bars for Immersive Look -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+         <!-- Default Background (Splash Screen) -->
+         <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <!-- Glassmorphism Card Style -->
+    <style name="CardGlass">
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardElevation">0dp</item>
+        <!-- Note: Background drawable must be set on the internal layout or card itself -->
+    </style>
+
+    <!-- Neon Button Style -->
+    <style name="NeonButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/bg_button_neon</item>
+        <item name="android:textColor">@color/primary_neon</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingHorizontal">24dp</item>
+        <item name="android:paddingVertical">12dp</item>
+    </style>
+
+    <!-- Typography -->
+    <style name="HeaderLarge">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="HeaderMedium">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif-bold</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <style name="LabelSmall">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.15</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="BodyText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    
+    <!-- Value/Metric Text -->
+    <style name="MetricValue">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    
+    <!-- AlertDialog Theme -->
+    <style name="AlertDialogTheme" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/bg_card_glass</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="colorAccent">@color/primary_neon</item>
+    </style>
+
+    <!-- BottomSheetDialog Theme for Multi-SIM Selection -->
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
+    </style>
+
+    <style name="CustomBottomSheet" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_card_glass</item>
+    </style>
+</resources>

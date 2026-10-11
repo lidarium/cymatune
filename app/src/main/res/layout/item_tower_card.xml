@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardGlass"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_glass"
+        android:padding="16dp">
+
+        <!-- Header: CID and Accuracy -->
+        <TextView
+            android:id="@+id/towerCid"
+            style="@style/HeaderMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tower 12345"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/towerCid"
+            app:layout_constraintBottom_toBottomOf="@id/towerCid">
+
+            <ImageView
+                android:id="@+id/accuracyIcon"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_status_dot_glow"
+                android:backgroundTint="@color/primary_neon"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/accuracyScore"
+                style="@style/LabelSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Accuracy: 95%"
+                android:textColor="@color/primary_neon" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnMap"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_dialog_map"
+            app:tint="@color/accent_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/towerCid"
+            app:layout_constraintBottom_toTopOf="@id/metricsRow"
+            tools:ignore="ContentDescription" />
+
+        <!-- Network Type and Time -->
+        <TextView
+            android:id="@+id/networkType"
+            style="@style/LabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_card_glass"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="2dp"
+            android:text="LTE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/towerCid" />
+
+        <TextView
+            android:id="@+id/timestamp"
+            style="@style/BodyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="10:42 AM"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/networkType"
+            app:layout_constraintStart_toEndOf="@id/networkType"
+            app:layout_constraintTop_toTopOf="@id/networkType" />
+
+        <!-- Metrics Row -->
+        <LinearLayout
+            android:id="@+id/metricsRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/networkType">
+
+            <TextView
+                android:id="@+id/signalStrength"
+                style="@style/BodyText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Signal: -85 dBm" />
+
+            <TextView
+                android:id="@+id/locationInfo"
+                style="@style/BodyText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Lat: 34.05, Lon: -118.24" />
+        </LinearLayout>
+
+        <!-- Precision Info -->
+        <TextView
+            android:id="@+id/precision"
+            style="@style/LabelSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="±50m • 12 obs • Triangulated"
+            app:layout_constraintTop_toBottomOf="@id/metricsRow" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
