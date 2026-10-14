@@ -1,163 +1,165 @@
-***REMOVED***
+# Cymatune Source-Available License (CSAL)
 
-***REMOVED***
-***REMOVED***
+**Version 1.0**
+**SPDX-License-Identifier: LicenseRef-Cymatune-CSAL-1.0**
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+Copyright (c) 2025–2026 M/s TERALIDARIUM WORKS (an Udyam-registered sole proprietorship firm existing under the laws of India). All Rights Reserved.
+Commercial & Legal Inquiries: legal@lidarium.com
+Website: https://lidarium.com
 
-***REMOVED***
+---
 
-***REMOVED***
+## PREAMBLE & NOTICE
 
-***REMOVED***
+This software and its associated detection engines, heuristics, scoring algorithms, user interfaces, and documentation (collectively, the **"Software"**) are proprietary, source-available works protected under the Indian Copyright Act, 1957, the Berne Convention for the Protection of Literary and Artistic Works, the WIPO Copyright Treaty, and applicable international intellectual property and contract laws.
 
-***REMOVED***
+By downloading, accessing, viewing, compiling, modifying, or using the Software, You agree to be bound by the terms and conditions of this License. No rights are granted under this License other than the limited, conditional rights expressly set forth below.
 
-***REMOVED***
+---
 
-***REMOVED***
+## 1. DEFINITIONS
 
-***REMOVED*** The natural-person identity of the sole proprietor, Udyam registration certificate, and any assignment or succession deeds shall be maintained under confidentiality by Licensor and disclosed to any court, tribunal, or arbitral authority under seal upon request, or to any party upon execution of a reasonable non-disclosure agreement, for the purposes of establishing standing, chain of title, or enforcement.
+1.1. **"Licensor"**, **"We"**, **"Us"**, or **"Our"** means **M/s TERALIDARIUM WORKS** (an Udyam-registered sole proprietorship firm existing under the laws of India, together with its sole proprietor and any successor corporate entity, LLP, or assignee, operating the "Lidarium" and "Cymatune" projects at https://lidarium.com and contactable via `legal@lidarium.com`), which is the sole and unified owner of the copyright and intellectual property rights in the Software. The natural-person identity of the sole proprietor, Udyam registration certificate, and any assignment or succession deeds shall be maintained under confidentiality by Licensor and disclosed to any court, tribunal, or arbitral authority under seal upon request, or to any party upon execution of a reasonable non-disclosure agreement, for the purposes of establishing standing, chain of title, or enforcement.
 
-***REMOVED***
+1.2. **"You"** or **"Licensee"** means an individual natural person exercising permissions granted by this License in their private, personal, or academic research capacity. "You" or "Licensee" does not include any corporation, company, partnership, enterprise, news or media organization, government agency, defense or intelligence entity, non-governmental organization (NGO), or other organizational entity, unless such entity has executed a separate written Commercial License Agreement with Licensor.
 
-***REMOVED***
+1.3. **"Software"** means each version of the Cymatune software, source code, object code, APK/AAB packages, resource files, database schemas, and documentation made available by Licensor under these terms, including any portion or element thereof.
 
-***REMOVED***
+1.4. **"Detection Heuristics and Architecture"** means the proprietary structure, sequence, organization, threshold matrices, weighting parameters, state machines, signal propagation models (including Free Space Path Loss, Timing Advance, RSRP/RSRQ/SINR correlation, and Kalman filtering), cellular protocol validators, logcat/RIL parsing rules, and the 42-method IMSI-catcher / fake-cell-tower detection and trust-scoring engine embodied in the Software.
 
-***REMOVED***
+1.5. **"Derivative Work"** means any work of authorship, modification, patch, fork, extension, translation, port (including translating or porting the Software or the non-literal structure, sequence, and organization of the Detection Heuristics and Architecture from Kotlin/Java into C, C++, Rust, Swift, Objective-C, Python, Dart, Go, JavaScript, or any other programming language), or compilation that is based upon, derived from, or incorporates any copyrightable expression or structural element of the Software.
 
-***REMOVED***
+1.6. **"Commercial Use"** means any use, reproduction, modification, deployment, or distribution of the Software or any Derivative Work that is intended for, directed toward, or results in commercial advantage, monetary compensation, cost avoidance, business operations, or organizational benefit, whether direct or indirect.
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+1.7. **"Internal Business or Organizational Use"** means installing, deploying, running, evaluating in production, or distributing the Software or any Derivative Work within, by, at the direction of, or on behalf of any company, corporation, enterprise, news or media organization, law firm, consultancy, employer, government body, law enforcement agency, military/defense organization, educational institution's administrative IT fleet, or non-profit / non-governmental organization (NGO). This includes, without limitation:
+   (a) automated or fleet deployment via Mobile Device Management (MDM) or Enterprise Mobility Management (EMM);
+   (b) manual, one-by-one compilation, sideloading, or installation by an IT administrator, security officer, consultant, or technician onto individual devices used by employees, journalists, contractors, executives, or members; and
+   (c) instructing, requiring, or assisting employees, journalists, or personnel to install or run the Software on company-issued or employee-owned (BYOD) devices in connection with their employment, professional duties, or fieldwork.
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+1.8. **"Competing Use"** means making the Software or any Derivative Work available to others—whether free of charge or for a fee, and whether as source code, compiled binaries, an Android/iOS application, a software development kit (SDK), a library, an embedded firmware module, an API, or a managed/hosted service—that:
+   (a) substitutes for the Software or any product or service offered by Licensor;
+   (b) offers Competing Functionality, meaning a product or service that satisfies both of the following: (i) it is designed for, marketed for, or used for cellular network anomaly detection, IMSI-catcher or stingray detection, base-station trust scoring, or rogue/fake cell tower identification; AND (ii) it implements, incorporates, or is derived from five (5) or more of the method-families described in Section 1.4 (Detection Heuristics and Architecture) or the forty-two (42) detection methods documented in the Software, including but not limited to geographic anomaly detection, signal strength pattern analysis, timing advance anomaly detection, protocol downgrade detection, cipher suite validation, or trust scoring. For clarity, the five (5) method-family threshold is an evidentiary standard for establishing substantial similarity under this License, not a safe harbour permitting copying of fewer than five (5) methods; any unauthorized use, reproduction, or porting of even a single (1) detection method or heuristic constitutes a breach of this License. A party that has accessed, viewed, or downloaded the Software source code within the twenty-four (24) months preceding the alleged Competing Use shall be presumed to have copied such method-families, and any clean-room or independent-creation defence shall be unavailable to such party; or
+   (c) is distributed through any public or private application marketplace (including but not limited to Google Play Store, Apple App Store, F-Droid, Samsung Galaxy Store, Huawei AppGallery, Amazon Appstore, or third-party APK repositories) without Licensor's prior written authorization.
 
-***REMOVED***
+---
 
-***REMOVED***
+## 2. CONDITIONAL LICENSE GRANT
 
-***REMOVED***
+Subject to Your continuous compliance with the conditions and covenants of this License, Licensor hereby grants You a conditional, revocable, non-exclusive, royalty-free, worldwide, **non-sublicensable**, and **non-transferable** license, under Licensor's copyright rights in the Software, to view, download, compile, execute, and modify the Software **solely for a Permitted Purpose** as defined in Section 3.
 
-***REMOVED***
+---
 
-***REMOVED***
+## 3. PERMITTED PURPOSE
 
-***REMOVED***
+A **"Permitted Purpose"** means only the following non-commercial activities performed by an individual natural person acting strictly in their private capacity:
 
-***REMOVED***
+3.1. **Personal Individual Security Use:** Personally compiling the Software from source Yourself and installing it onto a personal Android device owned and operated solely by You for Your own private, personal, non-commercial cellular security and privacy protection outside the scope of any employment, corporate, journalistic, or organizational mandate. You may not compile an APK once and install or sideload it onto devices belonging to other individuals, co-workers, or employees.
 
-***REMOVED***
+3.1A. **Incidental Benefit Safe Harbour:** A Permitted Purpose under Section 3.1 is not lost solely because Your personal, self-initiated use of the Software on Your own device incidentally benefits Your employer, journalistic work, or organizational activities, provided that all of the following conditions are satisfied: (a) Your use was not directed, required, encouraged, or mandated by any employer, organization, or supervisory policy; (b) no Mobile Device Management (MDM), Enterprise Mobility Management (EMM), or other automated or manual IT administration was used to install, push, or manage the Software on Your device; (c) You did not receive any reimbursement, stipend, or other compensation from any employer or organization for such use; and (d) no data, alerts, or output from the Software is reported, transmitted, or made available to any employer, organization, or third party. If any of conditions (a) through (d) is not satisfied, such use constitutes Internal Business or Organizational Use under Section 1.7 and requires a separate Commercial License Agreement.
 
-***REMOVED***
+3.2. **Non-Commercial Security Research & Academic Study:** Inspecting, auditing, testing, and analyzing the source code of the Software for non-commercial academic study, personal education, or independent vulnerability research, provided that any published research credits **Cymatune (https://github.com/lidarium/cymatune)** and does not distribute a Competing Use product.
 
-***REMOVED***
+3.3. **Non-Commercial Source Contributions & Authorized Coding Agents:** Creating modifications, refactoring, or bug fixes in a public fork on GitHub solely for personal testing or for submitting Pull Requests back to Licensor's official repository (including through the use of automated AI coding assistants or agents such as Jules, GitHub Copilot, or similar inference tools acting at the direction of Licensor or a Contributor to edit code or generate Pull Requests), provided that all original copyright, license, and attribution notices are retained intact.
 
-***REMOVED***
+---
 
-***REMOVED***
+## 4. SCOPE-OF-USE CONDITIONS & CONTRACTUAL COVENANTS
 
-***REMOVED***
+Your license to access and use the Software is expressly conditioned upon Your compliance with the following restrictions, which operate both as limitations on the scope of the copyright license and as binding contractual covenants during Your access to or use of the Software. Without a separate written **Commercial License Agreement** from Licensor (`legal@lidarium.com`), You shall not:
 
-***REMOVED***
+4.1. **No Commercial Use:** Sell, lease, rent, license, sublicense, monetize (including via advertisements, sponsorships, paid support, telemetry monetization, token/cryptocurrency models, or "freemium" / "open-core" tiers), or otherwise commercially exploit the Software or any Derivative Work.
 
-***REMOVED***
+4.2. **No Internal Business, News/Media, Enterprise, or Government Use:** Use, install, sideload, or deploy the Software or any Derivative Work for any Internal Business or Organizational Use (as defined in Section 1.7), whether via automated MDM deployment, manual one-by-one IT administrator installation, or workplace BYOD instruction.
 
-***REMOVED***
+4.3. **No Competing Use or App Store Distribution:** Engage in any Competing Use (as defined in Section 1.8), or publish, upload, or distribute compiled binaries (APKs, AABs, or equivalents) of the Software or any Derivative Work on any application store, package repository, website, or peer-to-peer distribution channel, even if offered free of charge.
 
-***REMOVED***
+4.4. **No SDK, Library, or OEM Embedding:** Extract, link, wrap, bundle, or embed the Software, its classes, or its Detection Heuristics and Architecture into any third-party application, mobile security suite, VPN app, antivirus product, custom Android ROM / OS distribution, baseband tool, or hardware device.
 
-***REMOVED***
+4.5. **Contractual Covenant Against Algorithmic Extraction, Non-Literal Porting & Reverse Engineering:** Licensor makes the source code publicly readable solely to enable security verification, transparency, and personal compilation under Section 3. As an express contractual condition of accessing the Software source code, You covenant and agree that You will not, directly or through any third party: (a) reverse-engineer, decompile, disassemble, or otherwise attempt to derive the source code, object code, or underlying structure of the Software or any portion thereof; (b) extract, copy, or reproduce the non-literal structure, sequence, and organization (SSO) of the Detection Heuristics and Architecture; (c) translate, port, or convert the Detection Heuristics and Architecture (including the 42 detection methods, threshold matrices, weighting parameters, and scoring logic) into any other programming language, framework, or platform; or (d) use access to the Software to create, develop, or assist in the creation of any product or service that implements, incorporates, or is derived from the Detection Heuristics and Architecture. For the avoidance of doubt, any Licensee who has viewed, accessed, or downloaded the Software source code is bound by this Section 4.5, and the availability of interoperability or fair-dealing exceptions under Section 52 of the Copyright Act, 1957 shall not be available as a defence to a breach of this Section 4.5 by such Licensee. Breach of this Section 4.5 constitutes both a material breach of contract and, to the extent copyrightable expression or structural elements are reproduced or adapted, copyright infringement.
 
-***REMOVED***
+4.6. **No AI / Machine Learning Model Training:** Use the Software, its source code, documentation, or Detection Heuristics and Architecture to train, fine-tune, update weights of, or distill any third-party artificial intelligence model or large language model (LLM), nor sell datasets derived from the Software. *(Note: This restriction binds Licensees only and does not restrict Licensor's own AI training or data processing operations, nor does it prohibit ephemeral inference by automated coding agents permitted under Section 3.3).*
 
-***REMOVED***
+4.7. **Preservation of Notices:** Remove, alter, obfuscate, or obscure any copyright, trademark, attribution, or license notices in the Software, or bypass any technical integrity mechanisms.
 
-***REMOVED***
+---
 
-***REMOVED***
+## 5. PATENTS & DEFENSIVE TERMINATION
 
-***REMOVED***
+5.1. **Limited Patent License:** To the extent Your use of the Software strictly for a Permitted Purpose would necessarily infringe any patent claims held or licensable by Licensor at the time the Software is made available, Licensor grants You a limited, revocable, non-exclusive, non-transferable, non-sublicensable license under such patent claims solely to exercise the Permitted Purpose. No patent license is granted for any Commercial Use, Internal Business or Organizational Use, or Competing Use.
 
-***REMOVED***
+5.2. **No Reverse Patenting:** As a condition of the grant in Section 2, You agree not to file, apply for, or prosecute any patent application anywhere in the world that claims, incorporates, or is derived from the Software, any Derivative Work, or the Detection Heuristics and Architecture. To the extent any such patent is nevertheless obtained, You hereby grant Licensor an immediate, irrevocable, perpetual, worldwide, royalty-free, transferable, and unrestrictedly sublicensable license under all claims of such patent.
 
-***REMOVED***
+5.3. **Patent Retaliation Termination:** If You (or Your employer or affiliate) institute patent, copyright, or other intellectual property litigation or administrative proceedings against Licensor or any user of the Software (including a cross-claim or counterclaim in a lawsuit) alleging that the Software infringes any patent or intellectual property right, all licenses granted to You under this License shall terminate automatically as of the date such proceeding is filed.
 
-***REMOVED***
+---
 
-***REMOVED***
+## 6. TRADE SECRETS & CONFIDENTIAL INFORMATION
 
-***REMOVED***
+6.1. **Trade Secret Acknowledgement.** The Detection Heuristics and Architecture (as defined in Section 1.4), including but not limited to the 42 detection methods, threshold matrices, weighting parameters, scoring algorithms, state machines, and signal propagation models, constitute valuable trade secrets of Licensor. By accessing the Software, You acknowledge that such trade secrets derive independent economic value from not being generally known to the public or to other persons who can obtain economic value from their disclosure or use, and that Licensor has taken reasonable measures to keep such information secret, including but not limited to publication under this source-available license that expressly restricts reverse engineering, extraction, and competing use.
 
-***REMOVED***
+6.2. **No Trade Secret Rights Granted.** Nothing in this License grants You any right, title, or interest in or to the trade secrets of Licensor. Your access to the source code is a limited privilege conditioned upon Your continued compliance with this License, and does not constitute a disclosure or abandonment of Licensor's trade secret rights. You shall not, directly or through any third party: (a) misappropriate, disclose, or use Licensor's trade secrets except as expressly permitted under this License; (b) employ, engage, or collaborate with any current or former employee, contractor, or agent of Licensor with access to such trade secrets for the purpose of developing a Competing Use; or (c) solicit, induce, or encourage any current employee, contractor, or agent of Licensor to disclose or misappropriate such trade secrets.
 
-***REMOVED***
+6.3. **Survival.** Licensor's trade secret rights shall survive any termination or expiration of this License and shall be enforceable under applicable trade secret law, including the Indian Contract Act, 1872 (Section 27), the common law of confidence, and any other applicable statutory or equitable remedies, notwithstanding any termination of Your rights under this License.
 
-***REMOVED***
+6.4. **Third-Party Obligations.** If You are an employer, principal, or engager of any current or former employee, contractor, or agent of Licensor, You are expressly prohibited from directing, encouraging, or permitting such person to use or disclose Licensor's trade secrets in connection with Your work. Breach of this Section 6.4 shall constitute tortious interference with Licensor's trade secret rights and shall entitle Licensor to seek injunctive relief and damages without proof of actual loss.
 
-***REMOVED***
+---
 
-***REMOVED***
+## 7. TRADEMARKS & BRANDING
 
-***REMOVED***
+This License does not grant You any right, title, or interest in or to the trade names, trademarks, service marks, logos, domain names, or package identifiers of Licensor, including **"Cymatune"**, **"Lidarium"**, **"TERALIDARIUM WORKS"**, and the `com.cymatune` package namespace. See `TRADEMARKS.md` for full trademark policy.
 
-***REMOVED***
+---
 
-***REMOVED***
+## 8. CONTRIBUTIONS & SECTION 19 COPYRIGHT ACT COMPLIANCE
 
-***REMOVED***
+By submitting any patch, pull request, commit, code, algorithm, or other contribution (**"Contribution"**) to Licensor's repository (whether authored directly by You or generated via an automated coding agent such as Jules acting under Your initiation or review):
 
-***REMOVED***
+8.1. **Assignment (Section 19, Indian Copyright Act, 1957):** You hereby irrevocably assign and transfer to Licensor (`M/s TERALIDARIUM WORKS`) all right, title, and interest in and to such Contribution. In explicit compliance with Sections 19(5) and 19(6) of the Indian Copyright Act, 1957, the Parties agree that this assignment is **perpetual (for the full term of copyright protection and all renewals thereof)** and **worldwide (extending to all countries and territories throughout the universe)**.
 
-***REMOVED***
+8.2. **Unrestricted Fallback License & Inbound/Outbound Rights:** To the extent any portion of the assignment in Section 8.1 is held ineffective by mandatory law, You hereby grant Licensor an exclusive, perpetual (for the full term of copyright), irrevocable, worldwide, royalty-free, fully paid-up, transferable, and unrestrictedly sublicensable copyright and patent license to use, reproduce, modify, prepare derivative works of, distribute, commercialize, and re-license the Contribution under both this License and any commercial or proprietary licenses offered by Licensor, without any duty of accounting or royalty to You. Licensor simultaneously grants back to You a non-exclusive license to use Your Contribution under the terms of this License. See `CONTRIBUTING.md` for full contributor terms.
 
-***REMOVED***
+---
 
-***REMOVED***
+## 9. PERMANENT TERM, CURE PERIOD & TERMINATION
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+9.1. **Permanent Source-Available Term (No Springing Conversion):** The terms and restrictions of this License apply for the full duration of applicable copyright protection. Unlike time-delayed licenses, this License does **not** convert or transition into an open-source license after any period of time.
 
-***REMOVED***
+9.2. **Termination & 30-Day Cure Period for Remediable Breaches:**
+   (a) **Remediable Non-Commercial Breaches:** If You breach a condition of this License in good faith while acting within a non-commercial context (such as an inadvertent failure to include required attribution notices under Section 3.2 or Section 4.7), Your rights under this License shall terminate if You fail to cure such breach within **thirty (30) days** after receiving written notice of the breach from Licensor (or after otherwise becoming aware of the breach). If cured within such 30-day period, Your license shall continue in effect.
+   (b) **Immediate Termination for Material Commercial or Competing Breach:** If You engage in any Commercial Use (Section 4.1), Internal Business or Organizational Use (Section 4.2), Competing Use or App Store Distribution (Section 4.3), SDK/OEM Embedding (Section 4.4), Algorithmic Extraction (Section 4.5), or Patent Retaliation (Section 5.3), such breach is non-remediable and Your rights under this License shall **terminate immediately and automatically** without notice or cure period.
+   (c) **Effect of Termination:** Upon termination, You must immediately cease all use, compilation, and distribution of the Software and all Derivative Works, and delete all copies in Your possession or control. Sections 1, 4.5, 5.2, 6, 7, 8.2, 9.3, 10, 11, and 12 shall survive termination.
 
-***REMOVED***
+9.3. **Equitable Relief & Remedies:** You acknowledge that a breach of Section 4 may cause irreparable harm to Licensor for which monetary damages alone would be an inadequate remedy. Accordingly, Licensor shall be entitled to seek interim, preliminary, and permanent injunctive relief, specific performance, accounts of profits, and statutory damages in accordance with applicable law.
 
-***REMOVED***
+---
 
-***REMOVED***
+## 10. DISCLAIMER OF WARRANTIES
 
-***REMOVED***
+**THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OR CONDITION OF ANY KIND, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WITHOUT LIMITATION ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, QUIET ENJOYMENT, ACCURACY, RELIABILITY, OR NON-INFRINGEMENT.**
 
-***REMOVED***
+**WITHOUT LIMITING THE FOREGOING, LICENSOR MAKES NO WARRANTY OR REPRESENTATION THAT THE SOFTWARE WILL DETECT ALL OR ANY IMSI CATCHERS, ROGUE BASE STATIONS, STINGRAY DEVICES, CELLULAR INTERCEPTION EQUIPMENT, OR SURVEILLANCE ATTACKS, NOR THAT THE SOFTWARE WILL BE FREE OF FALSE POSITIVES, FALSE NEGATIVES, INTERRUPTIONS, OR VULNERABILITIES. THE SOFTWARE IS AN INFORMATIONAL DETECTION RESEARCH TOOL ONLY AND DOES NOT PREVENT OR BLOCK CELLULAR INTERCEPTION. YOU ASSUME ALL RISK ASSOCIATED WITH YOUR USE OF THE SOFTWARE.**
 
-***REMOVED***
+---
 
-***REMOVED***
+## 11. LIMITATION OF LIABILITY
 
-***REMOVED***
+**TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL LICENSOR, ITS PROPRIETOR, AUTHORS, OR CONTRIBUTORS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION, LOSS OF DATA, LOSS OF PRIVACY, SECURITY BREACHES, UNDETECTED SURVEILLANCE, LOSS OF PROFITS, BUSINESS INTERRUPTION, OR PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, ARISING IN ANY WAY OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.**
 
-***REMOVED***
+---
 
-***REMOVED***
+## 12. GOVERNING LAW, ARBITRATION & VENUE
 
-***REMOVED***
+12.1. **Governing Law:** This License and any dispute, claim, or controversy arising out of or relating to this License, its breach, termination, enforcement, or the Software (whether in contract, tort, copyright, or statute) shall be governed by and construed in accordance with the **laws of the Republic of India**, including the Indian Copyright Act, 1957 and the Indian Contract Act, 1872, without regard to conflict-of-law principles.
 
-***REMOVED***
+12.2. **Dispute Resolution & Arbitration:** Any dispute, controversy, or claim arising out of or relating to this License, including any question regarding its existence, validity, or termination, shall be referred to and finally resolved by binding arbitration in accordance with the **Arbitration and Conciliation Act, 1996** (as amended) and the rules of the **Bengaluru International Mediation and Arbitration Centre (BIMACC)** or such other arbitral institution as the parties may mutually agree. The arbitral tribunal shall consist of a sole arbitrator appointed by mutual agreement of the parties within thirty (30) days of the arbitration notice; failing such agreement, the arbitrator shall be appointed by the said institution in accordance with its rules. The **seat and venue of arbitration shall be Bengaluru (Bangalore), Karnataka, India**, and the proceedings shall be conducted in the English language. The arbitral award shall be final and binding upon the parties and enforceable in any court of competent jurisdiction. Costs of the arbitration, including the arbitrator's fees and institutional costs, shall follow the event, meaning that the unsuccessful party shall bear the costs of the successful party, unless the arbitral tribunal determines otherwise in its award.
 
-***REMOVED***
+12.3. **Exclusive Court Jurisdiction & Interim Relief:** Subject to Section 12.2, the competent commercial and civil courts located in **Bengaluru (Bangalore), Karnataka, India** shall have **exclusive jurisdiction** over all disputes, suits, and proceedings arising out of or relating to this License, including applications for interim or injunctive relief under Section 9 of the Arbitration and Conciliation Act, 1996 or under the Indian Copyright Act, 1957.
 
-***REMOVED***
+12.4. **Severability & Blue-Pencil Reformation:** If any provision of this License is held to be invalid, illegal, or unenforceable under applicable law, such provision shall be modified ("blue-penciled") to the minimum extent necessary to render it valid and enforceable while preserving its commercial and protective intent, and the remaining provisions shall continue in full force and effect.
 
-***REMOVED***
+12.5. **No Waiver:** No failure or delay by Licensor in exercising any right, power, or remedy under this License shall operate as a waiver thereof.
 
-***REMOVED***
+12.6. **Commercial Licensing:** For commercial licensing, OEM/SDK integration, newsroom/media deployment, enterprise or government fleet deployment, or custom licensing inquiries, contact: **legal@lidarium.com**
+
+12.7. **Foreign Infringement & Platform Takedown Enforcement:** Licensor reserves the right, but assumes no obligation, to enforce its rights against foreign or extraterritorial infringement through mechanisms other than arbitration under Section 12.2, including but not limited to: (a) submitting takedown notices under the Digital Millennium Copyright Act (DMCA), 17 U.S.C. § 512, or equivalent legislation in other jurisdictions, to application marketplaces including Google Play Store, Apple App Store, F-Droid, Samsung Galaxy Store, Huawei AppGallery, Amazon Appstore, and third-party APK repositories; (b) submitting trademark infringement complaints under the Cymatune Marks (as defined in Section 7 and TRADEMARKS.md) to such platforms; (c) issuing notices under Section 79 of the Information Technology Act, 2000 (India) to intermediaries hosting infringing copies; and (d) pursuing injunctive or other equitable relief in any court of competent jurisdiction. Nothing in this Section 12.7 shall be construed as a waiver of Licensor's rights under Section 12.2 or any other provision of this License.
